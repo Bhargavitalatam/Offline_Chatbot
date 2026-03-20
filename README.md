@@ -19,9 +19,12 @@ This project demonstrates how to deploy and interact with Large Language Models 
 - `report.md`: Project findings and evaluation results.
 - `README.md`: Project overview.
 
-## Live Demo
-Check out the interactive demo here: [Chic Boutique Chatbot (Gradio)](https://1af0e33525799eaa0d.gradio.live)
-*(Link expires in 7 days)*
+## Local Web Interface
+You can run a local web interface for the chatbot using Gradio. This operates **completely offline** and does not require an internet connection.
+
+1. Ensure Ollama is running.
+2. Run `python demo.py`.
+3. Access the UI at `http://127.0.0.1:7860`.
 
 ## Setup
 Refer to `setup.md` for detailed environment configuration.

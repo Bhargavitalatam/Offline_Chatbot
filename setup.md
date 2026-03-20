@@ -40,3 +40,7 @@ This will:
 - `prompts/`: Contains `zero_shot_template.txt` and `one_shot_template.txt`.
 - `eval/`: Contains `results.md` with evaluation outputs and scores.
 - `report.md`: Detailed analysis of the project findings.
+## 5. Offline vs. Online Access
+- **Offline Core**: The `chatbot.py` script is **100% offline**. It connects directly to your local Ollama server (`localhost:11434`). You do NOT need internet to run the chatbot logic, query the model, or generate the results log.
+- **Online Demo**: The `demo.py` script uses Gradio's `share=True` feature. This requires an internet connection ONLY to create a public tunnel (the `.gradio.live` link) so others can access your local chatbot remotely. 
+- **Local-Only Demo**: To run the web interface without internet, simply set `share=False` in `demo.py`. It will only be accessible at `http://127.0.0.1:7860` on your machine.

@@ -35,9 +35,7 @@ demo = gr.ChatInterface(
 )
 
 if __name__ == "__main__":
-    print("Launching Live Demo... Please wait for the public URL.")
-    import sys
-    # Redirect stdout to a file to capture the URL
-    with open("gradio_output.txt", "w", buffering=1) as f:
-        sys.stdout = f
-        demo.launch(share=True)
+    print("Launching Offline Web UI...")
+    print("Access the chatbot locally at: http://127.0.0.1:7860")
+    # share=False ensures no internet connection or tunnel is required.
+    demo.launch(share=False)
